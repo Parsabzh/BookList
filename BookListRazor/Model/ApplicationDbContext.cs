@@ -8,7 +8,8 @@ namespace BookListRazor.Model
 {
     public class ApplicationDbContext :DbContext
     {
-        
+        public DbSet<Book> Books { get; set; }
+
         public ApplicationDbContext(DbContextOptions options) :base((options))
         {
             
